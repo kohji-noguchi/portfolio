@@ -349,6 +349,10 @@ main .main_visual .image_iphone {
   word-wrap: break-word;
 }
 
+.wrapper_main .toggle_url figure:nth-of-type(2) {
+  display: none;
+}
+
 .wrapper_main #ui {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -475,6 +479,12 @@ main .main_visual .image_iphone {
     -webkit-animation: unset;
             animation: unset;
     margin-top: 40px;
+  }
+  .wrapper_main .toggle_url figure:nth-of-type(1) {
+    display: none;
+  }
+  .wrapper_main .toggle_url figure:nth-of-type(2) {
+    display: block;
   }
   .wrapper_main #ui {
     -webkit-box-ordinal-group: 2;
