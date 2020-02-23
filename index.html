@@ -46,7 +46,7 @@
     </div>
     <header>
       <div class="wrapper_header">
-        <h1 class="title_1"><a href="#">KOHJI</a></h1>
+        <h1 class="title_1"><a href="#about">KOHJI</a></h1>
         <ul class="list_bar">
           <li></li>
           <li></li>
@@ -215,7 +215,7 @@
                 <div class="row">
                   <div class="col-md-3">
                     <ul>
-                      <li><a>SKY</a></li>
+                      <li><a href="#about">KOHJI</a></li>
                     </ul>
                   </div>
                   <div class="col-md-3">
@@ -287,15 +287,18 @@
        
          $(window).resize(function(){
            $('.menu_sp_only ul').fadeOut();
+           $('.list_bar li:last-child').removeClass("no_display");
          });
       
          $('.list_bar, .menu_sp_only ul li a').click(function() {
            $('.menu_sp_only ul').fadeToggle(900);
+           $('.list_bar li:last-child').toggleClass("no_display");
          });
       
          $(document).click(function(event) {
            if (!$(event.target).closest('.list_bar').length) {
              $('.menu_sp_only ul').fadeOut();
+             $('.list_bar li:last-child').toggleClass("no_display");
            }
          });
       });
