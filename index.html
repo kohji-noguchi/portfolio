@@ -94,7 +94,7 @@
           </div>
           <div class="container mt-5" id="experience">
             <h2 class="title_2">Experience</h2>
-            <div class="row justify-content-between list_card">
+            <div class="row justify-content-between list_card hover_transparent">
               <div class="col-md-4 card_experience"><a target="_blank" href="https://jp.mitsuichemicals.com/en/"><img src="images/01_experience.png">
                   <h3 class="title_03">Corporate site</h3>
                   <table>
@@ -159,7 +159,7 @@
               </div>
             </div>
           </div>
-          <div class="container mt-5 toggle_url">
+          <div class="container mt-5 toggle_url hover_shadow">
             <div class="row">
               <div class="col-md-4">
                 <figure><a target="_blank" href="https://jsfiddle.net/pvoex0rs/"><img src="images/01_email.jpg" alt=""></a></figure>
@@ -309,6 +309,20 @@
           });
           return false;
         });
+      });
+      
+    </script>
+    <script>
+      $(window).on('load resize', function(){
+        var winW = $(window).width();
+        var devW = 767;
+        if (winW <= devW) {
+          $(".list_card").removeClass("hover_transparent");
+          $(".toggle_url").removeClass("hover_shadow");
+        } else {
+          $(".list_card").addClass("hover_transparent");
+           $(".toggle_url").addClass("hover_shadow");
+        }
       });
     </script>
   </body>
