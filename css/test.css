@@ -205,14 +205,14 @@ header .wrapper_header .list_bar {
 
 header .wrapper_header .list_bar li:last-child {
   opacity: 1;
-  -webkit-transition: opacity 0.3s ease-in;
-  transition: opacity 0.3s ease-in;
+  -webkit-transition: opacity 0.9s ease-in;
+  transition: opacity 0.9s ease-in;
 }
 
 header .wrapper_header .list_bar li.no_display {
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease-out;
-  transition: opacity 0.3s ease-out;
+  -webkit-transition: opacity 0.9s ease-out;
+  transition: opacity 0.9s ease-out;
 }
 
 header .wrapper_header .menu_sp_only ul {
