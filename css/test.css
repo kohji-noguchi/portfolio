@@ -321,6 +321,8 @@ main .main_visual .image_iphone {
   -webkit-box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
           box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
   border-radius: 20px;
+  color: inherit;
+  text-decoration: none;
 }
 
 .wrapper_main .list_card .card_experience a .title_03 {
@@ -349,8 +351,36 @@ main .main_visual .image_iphone {
   word-wrap: break-word;
 }
 
+.wrapper_main .list_card.hover_transparent a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.wrapper_main .list_card.hover_transparent a:hover {
+  opacity: 0.6;
+}
+
 .wrapper_main .toggle_url figure:nth-of-type(2) {
   display: none;
+}
+
+.wrapper_main .toggle_url.hover_shadow figure:nth-of-type(1) a {
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  color: #fff;
+  display: inline-block;
+  padding: 0.6em 2em;
+  margin: 0 0 1em;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.wrapper_main .toggle_url.hover_shadow figure:nth-of-type(1) a:hover {
+  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(-0.1875em);
+          transform: translateY(-0.1875em);
 }
 
 .wrapper_main #ui {
