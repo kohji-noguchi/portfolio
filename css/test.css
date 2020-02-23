@@ -191,10 +191,28 @@ header .wrapper_header h1.title_1 {
 
 header .wrapper_header h1.title_1 a {
   font-size: 24px;
+  text-decoration: none;
+  line-height: 2.4;
+}
+
+header .wrapper_header h1.title_1 a:hover {
+  color: inherit;
 }
 
 header .wrapper_header .list_bar {
   display: none;
+}
+
+header .wrapper_header .list_bar li:last-child {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+header .wrapper_header .list_bar li.no_display {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
 }
 
 header .wrapper_header .menu_sp_only ul {
@@ -399,6 +417,10 @@ main .main_visual .image_iphone {
   width: 100%;
   height: auto;
   overflow: hidden;
+}
+
+.wrapper_main .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0 !important;
 }
 
 .wrapper_main footer .wrapper_footer {
