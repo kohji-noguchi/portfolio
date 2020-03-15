@@ -574,4 +574,7 @@ main .main_visual .image_iphone {
     display: inline-block;
     padding: 0 10px;
   }
+  .wrapper_main footer .wrapper_footer .row .col-md-3 .pc_only {
+    display: none;
+  }
 }
