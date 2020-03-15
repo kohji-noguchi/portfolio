@@ -566,7 +566,9 @@ main .main_visual .image_iphone {
   }
   .wrapper_main footer .wrapper_footer .row .col-md-3 ul li a {
     color: #515154;
-    font-size: 12px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 0;
   }
   .wrapper_main footer .wrapper_footer .row .col-md-3:last-child ul li ul li {
     display: inline-block;
