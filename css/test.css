@@ -277,6 +277,7 @@ main .main_visual .text_box a {
 main .main_visual .image_iphone {
   -webkit-animation: float 6s ease-in-out infinite;
           animation: float 6s ease-in-out infinite;
+          margin-top: 80px;
 }
 
 .wrapper_main {
@@ -404,7 +405,16 @@ main .main_visual .image_iphone {
 .wrapper_main #ui {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
-          order: 2;
+          order: 1;
+}
+
+.order_image{
+  order: 2;
+}
+
+.order_image img{
+  border-radius: 20px;
+  margin-top: 50px;
 }
 
 .wrapper_main .order {
